@@ -1,3 +1,4 @@
+'use client'
 import * as React from 'react'
 import Box from '@mui/material/Box'
 import Drawer from '@mui/material/Drawer'
@@ -38,9 +39,7 @@ export default function TemporaryDrawer() {
 		<div>
 			{(['left'] as const).map((anchor) => (
 				<React.Fragment key={anchor}>
-					<Button onClick={toggleDrawer(anchor, true)}>
-						{anchor}
-					</Button>
+					<button onClick={toggleDrawer(anchor, true)}>Menu</button>
 					<Drawer
 						anchor={anchor}
 						open={state[anchor]}
