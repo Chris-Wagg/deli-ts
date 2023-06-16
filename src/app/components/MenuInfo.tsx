@@ -1,6 +1,4 @@
-import React from 'react'
-
-export default function MenuStuff() {
+export default function MenuInfo() {
 	return (
 		<section className='menu-container'>
 			<div className='text-container'>
